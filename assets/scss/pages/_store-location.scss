@@ -1,0 +1,113 @@
+.location-container {
+  padding: 96px 0 32px;
+  &-title {
+    border-left: 8px solid #9f1213;
+    margin-bottom: 32px;
+  }
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-left: 16px;
+  }
+}
+.location-select-menu {
+  width: 416px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  p {
+    font-size: 24px;
+  }
+  select {
+    background-color: $white-color;
+    width: 304px;
+    border: 1px solid #ced4da;
+  }
+}
+.location-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  &-item {
+    width: 416px;
+    border: 1px solid #00000020;
+    margin-bottom: 48px;
+  }
+  .mr-setting {
+    margin: 0 24px;
+  }
+}
+.location-card-list-item {
+  .card-title {
+    font-size: 24px;
+    padding: 8px 0;
+    padding-left: 24px;
+    border: 1px solid #00000020;
+  }
+  .card-info {
+    padding: 16px 24px;
+    border: 1px solid #00000020;
+    li {
+      display: flex;
+    }
+    span {
+      margin-right: 8px;
+      padding: 3px 0;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  .card-footer {
+    background-color: #000;
+    text-align: center;
+    padding: 16px 0;
+    a {
+      color: $white-color;
+    }
+  }
+}
+
+@include pad {
+  .location-container {
+    padding: 80px 0 80px;
+  }
+  .location-card-list {
+    justify-content: space-between;
+    &-item {
+      width: 337px;
+      margin-bottom: 24px;
+    }
+    .mr-setting {
+      margin: 0;
+    }
+  }
+}
+
+@include phone {
+  .location-container {
+    padding: 40px 0 64px;
+    &-title {
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: 24px;
+    }
+  }
+  .location-select-menu {
+    width: 348px;
+    margin-bottom: 24px;
+    p {
+      font-size: 16px;
+    }
+    select {
+      width: 276px;
+    }
+  }
+  .location-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    &-item {
+      width: 348px;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.header-container {
+  background-color: $primary;
+}
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.brand-logo-link {
+  padding: 12px 0;
+  a {
+    display: block;
+    img {
+      width: 80px;
+      height: 50px;
+    }
+  }
+}
+.header-list {
+  width: 492px;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+  a {
+    display: block;
+    color: $white-color;
+    font-size: 20px;
+  }
+  a:hover {
+    color: #dabea7;
+    font-size: 25px;
+  }
+}
+/* Material-Design */
+@include pad {
+  /* 常用 */
+  .container {
+    max-width: 720px;
+  }
+  .social-media-list {
+    width: 152px;
+  }
+  .social-media-link img {
+    width: 40px;
+    height: 40px;
+  }
+}
+/* Iphone size */
+@include phone {
+  /* header */
+  .header-flex {
+    flex-direction: column;
+    padding: 0;
+  }
+  .brand-logo-link {
+    padding: 16px 0;
+    margin-left: 15px;
+  }
+  .header-list {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    &-item {
+      border: 1px solid #fff;
+      width: 50%;
+      text-align: center;
+      padding: 12px 0;
+    }
+  }
+}
