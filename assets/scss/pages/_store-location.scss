@@ -1,35 +1,8 @@
-.location-container {
-  padding: 96px 0 32px;
-  &-title {
-    border-left: 8px solid #9f1213;
-    margin-bottom: 32px;
-  }
-  h1 {
-    font-size: 48px;
-    font-weight: 700;
-    margin-left: 16px;
-  }
-}
-.location-select-menu {
-  width: 416px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
-  p {
-    font-size: 24px;
-  }
-  select {
-    background-color: $white-color;
-    width: 304px;
-    border: 1px solid #ced4da;
-  }
-}
 .location-card-list {
   display: flex;
   flex-wrap: wrap;
   &-item {
     width: 416px;
-    border: 1px solid #00000020;
     margin-bottom: 48px;
   }
   .mr-setting {
@@ -39,7 +12,7 @@
 .location-card-list-item {
   .card-title {
     font-size: 24px;
-    padding: 8px 0;
+    padding: 7px 0;
     padding-left: 24px;
     border: 1px solid #00000020;
   }

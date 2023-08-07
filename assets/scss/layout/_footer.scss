@@ -21,6 +21,9 @@
     }
   }
 }
+.white-color {
+  color: $white-color;
+}
 .fz-setting {
   color: $white-color;
   font-size: 36px;
@@ -84,7 +87,7 @@
   /* left */
   .footer-left-section {
     width: 201px;
-    ul {
+    .footer-list {
       display: none;
     }
   }
