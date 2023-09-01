@@ -27,7 +27,6 @@
   }
   a:hover {
     color: #dabea7;
-    font-size: 25px;
   }
 }
 /* Material-Design */
@@ -43,9 +42,6 @@
     width: 40px;
     height: 40px;
   }
-}
-/* Iphone size */
-@include phone {
   /* header */
   .header-flex {
     flex-direction: column;

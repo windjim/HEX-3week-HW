@@ -1,12 +1,12 @@
 // 平板模式
 @mixin pad {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     @content;
   }
 }
 //手機模式
 @mixin phone {
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 768px) {
     @content;
   }
 }
